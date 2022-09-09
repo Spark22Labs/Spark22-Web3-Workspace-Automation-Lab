@@ -1,0 +1,12 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "hardhat": "^2.10.1"
+  },
+  "dependencies": {
+    "@fireblocks/hardhat-fireblocks": "^0.0.2",
+    "@openzeppelin/contracts": "^4.7.3",
+    "datauri": "^4.1.0"
+  }
+}
