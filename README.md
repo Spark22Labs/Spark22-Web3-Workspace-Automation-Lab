@@ -284,7 +284,7 @@ Now that we have our very own Space Bunny NFT, let's verify it on both Fireblock
 
 Note that you will have to either disable or uninstall the Metamask extension if you have that installed for the Fireblocks Chrome Extension to work correctly. You can also create a temporary new Google Chrome profile just for this lab if you want to install the extension there.
 
-3. Now we can navigate to the [Opensea Testnet](https://testnets.opensea.io/), [Rarible Testnet](https://testnet.rarible.com/) and connect to Fireblocks by selecting "Metamask" on the wallet icon on top right hand corner. You will have to authorize OpenSea or Rarible to connect to your wallet by signing the transaction that pops up.
+3. Now we can navigate to the [Opensea Testnet](https://testnets.opensea.io/) (or alternatively, the [Rarible Testnet](https://testnet.rarible.com/)) and connect to Fireblocks by selecting "Metamask" on the wallet icon on top right hand corner. You will have to authorize OpenSea or Rarible to connect to your wallet by signing the transaction that pops up.
 
 4. Once authorized (the Fireblocks Chrome Extension should say "connected"), click on your OpenSea or Rarible profile icon and select "My Collections".
 
