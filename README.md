@@ -12,6 +12,10 @@ In this lab, we will be creating our very own NFT collection and minting a new N
 
 ## Lab Steps - Follow Along!
 
+Follow the steps below, although we also encourage you to experiment and deviate from the normal path and explore. We've also included some "extra credit questions" in each step that you can google to read more about topics we cover here.
+
+And of course, if you ever get stuck or have questions - let a Fireblocks staff member know and we'll help out.
+
 ### Step 1: Install Hardhat and Initialize Project
 To start, let's create a project directory to work in. This will be the only directory we'll work in for this lab, and will contain all our files and NPM packages.
 
@@ -60,7 +64,7 @@ We will select the **JavaScript project** and hit enter.
 
 🎉 Now we have a new Hardhat project!
 
-**FAQ**
+**Extra Credit Questions**
 * What is Hardhat?
 
 
@@ -74,7 +78,13 @@ Let's use the [Contracts Wizard](https://wizard.openzeppelin.com/#erc721) by Ope
 
 1. Navigate to the [OpenZeppelin Contracts Wizard](https://wizard.openzeppelin.com/#erc721) for ERC721, and select the following boxes. We'll intentionally keep the contract simple to reduce complexity and gas fees.
 
-[img]
+![OpenZeppelin Contracts Wizard Settings](OZ.png)
+
+Make sure to check the following boxes:
+- Mintable
+- Auto increment ids
+- URI Storage
+- Ownable
 
 
 2. Create a new file, **"spacebunnies.sol"**  in your project directory: `spark22-web3-lab/contracts/spacebunnies.sol`
@@ -88,18 +98,20 @@ In your project directory, run:
 npm install @openzeppelin/contracts
 ```
 
-**FAQ**
+**Extra Credit Questions**
 * What is ERC721?
 * What is an Ethereum smart contract?
 
 ### Step 3: Setup Hardhat for Fireblocks
 #### 1. Install the Hardhat Fireblocks plugin
+
 ```
 npm install @fireblocks/hardhat-fireblocks
 ```
 
 #### 2. Replace the contents of your existing Hardhat configuration file, `hardhat.config.js`, with the following:
-```
+
+```javascript
 require("@nomicfoundation/hardhat-toolbox");
 require("@fireblocks/hardhat-fireblocks");
 
@@ -130,17 +142,20 @@ What are we doing here?
 
 ### Step 4: Deploying our collection
 1. Since we don't need the `Lock.sol` file that came with our Hardhat boilerplate template, we can delete it.
+
 ```
 rm spark22-web3-lab/contracts/Lock.sol
 ```
 
 2. Compile the `spacebunnies.sol` file
+
 ```
 npx hardhat compile
 ```
 
 3. Next, we will replace the contents of the `deploy.js` script, with the following:
-```
+
+```javascript
 // We require the Hardhat Runtime Environment explicitly here. This is optional
 // but useful for running the script in a standalone fashion through `node <script>`.
 //
@@ -167,8 +182,8 @@ main().catch((error) => {
 ```
 
 4. Finally, let's deploy our contract to the Ethereum Rinkeby Testnet:
-```
-# npx hardhat test    # If we had defined some mock tests, it would be good practice to run these first
+
+```shell
 npx hardhat run --network rinkeby scripts/deploy.js 
 ```
 
@@ -252,6 +267,7 @@ npx hardhat run --network rinkeby scripts/mint.js
 ```
 
 This should again take a couple of minutes to run. Once finished successfully, you should see the following output:
+
 ```
 A new Space Bunny NFT has been minted to: <eth_address>
 ```
