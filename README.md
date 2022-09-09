@@ -14,7 +14,9 @@ In this lab, we will be creating our very own NFT collection and minting a new N
 
 Follow the steps below, although we also encourage you to experiment and deviate from the normal path and explore. We've also included some "extra credit questions" in each step that you can google to read more about topics we cover here.
 
-And of course, if you ever get stuck or have questions - let a Fireblocks staff member know and we'll help out.
+If you ever get stuck, you can refer to the [Github repo](https://github.com/Spark22Labs/Spark22-Web3-Workspace-Automation-Lab) where the `lab` directory contains an entire working project that you can reference.
+
+And of course, if you have any questions - let a Fireblocks staff member know and we'll help out.
 
 ### Step 1: Install Hardhat and Initialize Project
 To start, let's create a project directory to work in. This will be the only directory we'll work in for this lab, and will contain all our files and NPM packages.
