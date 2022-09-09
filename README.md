@@ -216,7 +216,7 @@ Note that we're using an image host here for convenience, but another alternativ
 ### Step 6: Mint our NFT
 #### 1. Create a new `mint.js` file in the `scripts` directory: `scripts/mint.js`. Add the following code:
 
-```
+```javascript
 // We require the Hardhat Runtime Environment explicitly here. This is optional
 // but useful for running the script in a standalone fashion through `node <script>`.
 //
