@@ -280,6 +280,8 @@ Congrats on minting your very first NFT!
 
 Now that we have our very own Space Bunny NFT, let's verify it on both Fireblocks, as well as OpenSea or Rarible (NFT marketplaces).
 
+**Note: For this step, you will need Fireblocks Console UI access. Please tell a Fireblocks Staff member once you reach this step, and they will help you login.**
+
 1. Login to your Fireblocks workspace to see the last transaction was completed successfully. It should be of type "Contract Call".
 
 2. Install the [Fireblocks Chrome Extension](https://chrome.google.com/webstore/detail/fireblocks-defi-browser-e/ffoagjcmdplcadogknepbjebconcjjjb) from the Google Chrome Extension store. If you need more information, you can read [this Help Center](https://support.fireblocks.io/hc/en-us/articles/5403962226332-Connecting-to-Web3-using-the-Fireblocks-Chrome-Extension) article (must be able to login to Fireblocks to view).
