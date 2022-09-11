@@ -137,7 +137,7 @@ What are we doing here?
 1. Importing the Fireblocks Hardhat plugin, so that we can use a Fireblocks vault as our secure storage
 2. Specifying the Ethereum Rinkeby Testnet, which we will be using Ankr.com to access via their API
 
-**FAQ**
+**Extra Credit Questions**
 1. What is Rinkeby Testnet?
 2. What is Ankr.com?
 
