@@ -125,24 +125,26 @@ require("@fireblocks/hardhat-fireblocks");
 module.exports = {
   solidity: "0.8.9",
   networks: {
-    rinkeby: {
-      url: "https://rpc.ankr.com/eth_rinkeby",
+    goerli: {
+      url: "https://rpc.ankr.com/eth_goerli",
       fireblocks: {
         privateKey: process.env.FIREBLOCKS_API_PRIVATE_KEY_PATH,
         apiKey: process.env.FIREBLOCKS_API_KEY,
-        vaultAccountIds: process.env.FIREBLOCKS_VAULT_ACCOUNT_IDS,
+        vaultAccountIds: "18",
       }
     },
   }
 };
 ```
 
+Note: We have already set up a vault account on Fireblocks for you (vault_id 18) that has some pre-funded Goerli ETH.
+
 What are we doing here?
 1. Importing the Fireblocks Hardhat plugin, so that we can use a Fireblocks vault as our secure storage
-2. Specifying the Ethereum Rinkeby Testnet, which we will be using Ankr.com to access via their API
+2. Specifying the Ethereum Goerli Testnet, which we will be using Ankr.com to access via their API
 
 **Extra Credit Questions**
-1. What is Rinkeby Testnet?
+1. What is Goerli Testnet?
 2. What is Ankr.com?
 
 
@@ -187,10 +189,10 @@ main().catch((error) => {
 });
 ```
 
-4. Finally, let's deploy our contract to the Ethereum Rinkeby Testnet:
+4. Finally, let's deploy our contract to the Ethereum Goerli Testnet:
 
 ```shell
-npx hardhat run --network rinkeby scripts/deploy.js 
+npx hardhat run --network goerli scripts/deploy.js 
 ```
 
 This should take a couple of minutes to run, if everything was configured correctly. Once the deploy script has finished running, you should see a similar message if the contract was deployed successfully. Congrats!
@@ -200,11 +202,11 @@ SpaceBunnies deployed to: <contract_address>
 ```
  
 ### (Optional) Step 4.5: Verifying the transaction
-We can further verify our contract by checking the Fireblocks console and [Etherscan for Rinkeby Testnet](https://rinkeby.etherscan.io/).
+We can further verify our contract by checking the Fireblocks console and [Etherscan for Goerli Testnet](https://goerli.etherscan.io/).
 
-1. Login to your Fireblocks workspace. On the transactions tab, you should see the latest transaction was of type "Contract call". Next, copy the deposit address for your assigned vault name that contains your `ETH_TEST4` (Rinkeby) tokens from the "Assets" link on the left navigation pane.
+1. Login to your Fireblocks workspace. On the transactions tab, you should see the latest transaction was of type "Contract call". Next, copy the deposit address for your assigned vault name that contains your `ETH_TEST3` (Goerli) tokens from the "Assets" link on the left navigation pane.
 
-2. Paste your address in [Etherscan (Rinkeby)](https://rinkeby.etherscan.io/) and you should be able to see the latest transaction marked as "Contract Creation" - with the same contract address that Hardhat provided in the previous step. You can also click on the transaction hash to further inspect it.
+2. Paste your address in [Etherscan (Goerli)](https://goerli.etherscan.io/) and you should be able to see the latest transaction marked as "Contract Creation" - with the same contract address that Hardhat provided in the previous step. You can also click on the transaction hash to further inspect it.
 
 ### Step 5: Find the perfect NFT image
 The fun part! Now we get to choose our space bunny image that we want to deploy to our newly created collection on the Ethereum (testnet) blockchain. Since our NFT images should be unique, an AI-generated image is a good way to source this.
@@ -269,7 +271,7 @@ Run the `mint.js` script:
 
 ```
 npm install datauri     # we use the `datauri` NPM module in the mint.js script
-npx hardhat run --network rinkeby scripts/mint.js
+npx hardhat run --network goerli scripts/mint.js
 ```
 
 This should again take a couple of minutes to run. Once finished successfully, you should see the following output:
