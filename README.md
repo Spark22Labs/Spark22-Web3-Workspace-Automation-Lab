@@ -82,7 +82,11 @@ Let's use the Contracts Wizard by OpenZeppelin, which is an interactive, browser
 
 ![OpenZeppelin Contracts Wizard Settings](OZ.png)
 
-Make sure to check the following boxes:
+Make sure to:
+Type in Space Bunnies in the Name filed under Settings
+Type in SPCB under the Symbol field under Setting
+
+Check the following boxes:
 - Mintable
 - Auto increment ids
 - URI Storage
