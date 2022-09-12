@@ -76,7 +76,7 @@ We'll now create our own NFT collection based on the popular ERC721 standard. Ou
 
 Before we can start minting our new NFTs however, we first need to deploy an Ethereum smart contract to actually create our collection. Luckily, the ERC721 standard is very common and there are some great tools to help us do this pretty easily.
 
-Let's use the [Contracts Wizard](https://wizard.openzeppelin.com/#erc721) by OpenZeppelin, which is an interactive, browser-based wizard to generate our smart contract file, written in Solidity.
+Let's use the Contracts Wizard by OpenZeppelin, which is an interactive, browser-based wizard to generate our smart contract file, written in Solidity.
 
 1. Navigate to the [OpenZeppelin Contracts Wizard](https://wizard.openzeppelin.com/#erc721) for ERC721, and select the following boxes. We'll intentionally keep the contract simple to reduce complexity and gas fees.
 
