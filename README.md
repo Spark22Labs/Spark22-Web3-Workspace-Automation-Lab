@@ -204,7 +204,7 @@ We can further verify our contract by checking the Fireblocks console and [Ether
 
 1. Login to your Fireblocks workspace. On the transactions tab, you should see the latest transaction was of type "Contract call". Next, copy the deposit address for your assigned vault name that contains your `ETH_TEST4` (Rinkeby) tokens from the "Assets" link on the left navigation pane.
 
-2. Paste your address in [Etherscan (Rinkeby)]((https://rinkeby.etherscan.io/)) and you should be able to see the latest transaction marked as "Contract Creation" - with the same contract address that Hardhat provided in the previous step. You can also click on the transaction hash to further inspect it.
+2. Paste your address in [Etherscan (Rinkeby)](https://rinkeby.etherscan.io/) and you should be able to see the latest transaction marked as "Contract Creation" - with the same contract address that Hardhat provided in the previous step. You can also click on the transaction hash to further inspect it.
 
 ### Step 5: Find the perfect NFT image
 The fun part! Now we get to choose our space bunny image that we want to deploy to our newly created collection on the Ethereum (testnet) blockchain. Since our NFT images should be unique, an AI-generated image is a good way to source this.
